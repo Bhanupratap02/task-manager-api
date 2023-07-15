@@ -16,7 +16,7 @@ app.use("/api/auth",require('./routes/auth'));
 app.use("/api/tasks",require("./routes/tasks"));
 
 const PORT =  8000
-mongoose.connect(process.env.URL,{
+mongoose.connect("mongodb+srv://sachin:02112003@mycluster.vpmrumy.mongodb.net/task-manager?retryWrites=true&w=majority",{
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
